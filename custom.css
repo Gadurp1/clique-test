@@ -1,3 +1,12 @@
+
+.page{
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
+  z-index: 9
+}
 .navbar{
   margin-bottom:0px;
   background:#fff;
@@ -373,32 +382,7 @@ div.panel-events {
   background: url(assets/images/wood-bg.jpg) center center no-repeat;
   background-size: cover
 }
-#auth .copy-wrap {
-  display: block;
-  margin: 150px auto 60px auto;
-  width: 720px;
-  -o-transition: 1s;
-  -ms-transition: 1s;
-  -moz-transition: 1s;
-  -webkit-transition: 1s;
-  transition: 1s
-}
-#auth .copy-wrap h2 {
-  text-align: center;
-  font-size: 36px;
-  color: #fff;
-  width: 720px;
-  margin: 0 auto 20px auto;
-  margin-bottom: 20px;
 
-}
-#auth .copy-wrap p {
-  text-align: center;
-  font-size: 16px;
-  line-height: 28px;
-  color: #fff;
-  font-family: 'core_sans_nr_45_regularRg'
-}
 #auth .features-box {
   display: block;
   position: relative;
@@ -408,6 +392,7 @@ div.panel-events {
   margin: 50px 2.5% 0 2.5%;
   background: rgba(0, 0, 0, 0.3);
 }
+
 #auth .features-box a.link {
   display: block;
   position: absolute;
@@ -424,12 +409,14 @@ div.panel-events {
   font-size: 48px;
   color:#fff
 }
-#auth .features-box i:hover {
-  background: #141517
+
+#auth .features-box i.icon:hover {
+  color: #009ABE;
 }
 
-#auth .features-box i:hover {
-  color: #009ABE
+#auth .features-box:hover {
+  background: #141517
+
 }
 
 #auth .features-box h4 {

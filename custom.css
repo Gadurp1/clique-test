@@ -42,7 +42,6 @@
     float: left;
     width: 100%;
     height: auto;
-    background: #fff
 }
 
 #section .wrap {
@@ -55,16 +54,16 @@
 
 #section h1 {
     font-size: 36px;
+    font-weight: 100;
     color: #222226;
     margin-bottom: 20px;
-    font-family: 'core_sans_nr_25_extraltRg'
 }
 
 #section p {
     font-size: 16px;
+    font-weight: 200;
     line-height: 20px;
     color: #222226;
-    font-family: 'core_sans_nr_45_regularRg'
 }
 
 .demo-btn {
@@ -281,7 +280,6 @@ div.panel-events {
     width: 100%;
     height: 390px;
     background-size: cover !important;
-    opacity: 0
 }
 
 
@@ -367,81 +365,111 @@ div.panel-events {
     background-size: cover
 }
 
-#auth .auth-pitch {
-    display: block;
-    margin: 100px auto 60px auto;
-    width: 720px;
+#auth {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 900px;
+  background: url(assets/images/wood-bg.jpg) center center no-repeat;
+  background-size: cover
 }
-
-#auth .auth-pitch h2 {
-    text-align: center;
-    font-size: 36px;
-    color: #fff;
-    width: 720px;
-    margin: 50 auto 20px auto;
-    margin-bottom: 20px;
-    font-family: 'core_sans_nr_25_extraltRg'
+#auth .copy-wrap {
+  display: block;
+  margin: 150px auto 60px auto;
+  width: 720px;
+  -o-transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+  transition: 1s
 }
+#auth .copy-wrap h2 {
+  text-align: center;
+  font-size: 36px;
+  color: #fff;
+  width: 720px;
+  margin: 0 auto 20px auto;
+  margin-bottom: 20px;
 
-#auth .auth-pitch p {
-    text-align: center;
-    font-size: 16px;
-    line-height: 28px;
-    color: #fff;
-    font-family: 'core_sans_nr_45_regularRg'
 }
-
+#auth .copy-wrap p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+  color: #fff;
+  font-family: 'core_sans_nr_45_regularRg'
+}
 #auth .features-box {
-    height: 450px;
-    background: rgba(0, 0, 0, 0.3);
-
+  display: block;
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 450px;
+  margin: 50px 2.5% 0 2.5%;
+  background: rgba(0, 0, 0, 0.3);
+}
+#auth .features-box a.link {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 450px
+}
+#auth .features-box i {
+  display: block;
+  margin: 40px auto 20px auto;
+  width: 82px;
+  height: 82px;
+  font-size: 48px;
+  color:#fff
+}
+#auth .features-box i:hover {
+  background: #141517
 }
 
-#auth .features-box i.icon {
-    display: block;
-    text-align:center;
-    font-size:64px
-}
-
-#auth .features-box:hover {
-    background: #141517
+#auth .features-box i:hover {
+  color: #009ABE
 }
 
 #auth .features-box h4 {
-    text-align: center;
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 20px;
-    padding: 0 40px;
-    font-family: 'core_sans_nr_35_lightregular'
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 0 40px;
+  font-family: 'core_sans_nr_35_lightregular'
 }
-
 #auth .features-box p {
-    text-align: center;
-    font-size: 14px;
-    line-height: 24px;
-    color: #fff;
-    padding: 0 40px;
-    font-family: 'core_sans_nr_45_regularRg'
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  color: #fff;
+  padding: 0 40px;
+  font-family: 'core_sans_nr_45_regularRg'
 }
-
 #auth .features-box a.more {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    background: #141517;
-    font-size: 14px;
-    width:100%;
-    color: #fff;
-    text-transform: uppercase;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  background: #141517;
+  font-family: 'core_sans_nr_65_boldregular';
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s;
+  transition: .3s
 }
-
 #auth .features-box:hover a.more {
-    background: #009ABE
+  background: #009ABE
 }
 
 #news .panel{
@@ -468,5 +496,56 @@ padding:20px
   font-weight:300;
   line-height:28px;
   text-decoration: underline;
+}
 
+
+.popular-links {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 60px 0;
+
+}
+.popular-links .wrap {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px
+}
+.popular-links h3 {
+  display: block;
+  float: left;
+  width: 25%;
+  font-size: 36px;
+
+}
+.popular-links ul {
+  display: inline-block;
+  float: left;
+  width: 75%;
+  margin: 0;
+  padding: 0;
+  text-align: center
+}
+.popular-links ul li {
+  display: inline-block;
+  width: 32.3333%;
+  text-align: left;
+  margin: 5px 0;
+  vertical-align: top
+}
+.popular-links ul li a {
+  font-size: 16px;
+  color: #009ABE;
+  text-align: left;
+  text-decoration: underline;
+  font-family: 'core_sans_nr_45_regularRg';
+  -o-transition: .3s;
+  -ms-transition: .3s;
+  -moz-transition: .3s;
+  -webkit-transition: .3s;
+  transition: .3s
+}
+.popular-links ul li a:hover {
+  color: #94D500
 }
